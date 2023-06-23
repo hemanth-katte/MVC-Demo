@@ -1,0 +1,43 @@
+﻿@model DogViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Create Dog</h2>
+<hr />
+<div class="card">
+
+	<div class="card-header">
+		<h5>Create a new dog</h5>
+	</div>
+
+	<div class="card-body">
+		<form asp-controller="HelloWorld" asp-action="CreateDog" method="post">
+			<div>
+				<label for="name">Dog Name</label>
+				<input asp-for=Name type="text" id="name" name="name" class="form-control" />
+			</div>
+			<br />
+			<div>
+				<label for="age">Age</label>
+				<input asp-for=Age type="number" id="age" name="age" class="form-control" />
+
+			</div>
+			<br />
+			<div>
+				<input type="submit" />
+			</div>
+		</form>
+	</div>
+
+	<div class="card-footer">
+
+	</div>
+
+</div>
+
+
+
